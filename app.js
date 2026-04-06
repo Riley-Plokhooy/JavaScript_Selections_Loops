@@ -1,28 +1,47 @@
 // Exercise 1
 
-for (let i = 0; i < 100; i++) {
-    if (i % 2 == 0) {
-        continue;
-    } else {
+let i = 0;
+while (i < 100) {
+    if (i % 2 !== 0) {
         console.log(i);
     }
+    i++;
 }
+
+
+let i = 0;
+do {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+    i++;
+} while (i < 100);
 
 // Exercise 2
 
-for (let i = 1; i < 100; i++) {
-    if (i % 3 == 0 && i % 5 == 0) {
+let i = 1;
+while (i < 100) {
+    if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
-    } else {
-        if (i % 3 == 0) {
-            console.log("Fizz");
-        }
-        if (i % 5 == 0) {
-            console.log("Buzz");
-        }
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
     }
+    i++;
 }
 
+let i = 1;
+do {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    }
+    i++;
+} while (i < 100);
 
 // Exercise 3
 
